@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoTimerApp.CommandHandler", "DemoTimerApp\DemoTimerApp.CommandHandler\DemoTimerApp.CommandHandler.csproj", "{129A627C-BA4E-4B45-8F22-A154DF49C83C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoTimerApp.EventHandler", "DemoTimerApp\DemoTimerApp.EventHandler\DemoTimerApp.EventHandler.csproj", "{650AEA5D-EFDC-4F1A-9E2B-CF557D4CAF08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoTimerApp.ReadingFunctionHandler", "DemoTimerApp\DemoTimerApp.ReadingFunctionHandler\DemoTimerApp.ReadingFunctionHandler.csproj", "{8F4A84A6-3854-43F9-B259-7CDF7D15D463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoTimerApp.UserInterface", "DemoTimerApp\DemoTimerApp.UserInterface\DemoTimerApp.UserInterface.csproj", "{4BAEEFA2-EC81-4EC5-9E2F-C365AAC8D6FD}"
+EndProject
+Project("{DA7C07C8-D9F3-4A79-840F-611D1C5950A5}") = "DemoTimerApp.Installer", "DemoTimerApp\DemoTimerApp.Installer\DemoTimerApp.Installer.iproj", "{EEDE936D-239F-4971-AB06-9F7DD5F62D4D}"
+EndProject
+Project("{CA2279AF-CA6F-4B4B-98B3-8D49B8D38547}") = "DemoTimerApp.DAPOMModel", "DemoTimerApp\DemoTimerApp.DAPOMModel\DemoTimerApp.DAPOMModel.pmproj", "{8B3A6E3C-1554-4FD1-AF75-634069C1585C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5AEA7E5D-3799-424D-AE29-FD786DD7DC75}"
+	ProjectSection(SolutionItems) = preProject
+		packages.reference = packages.reference
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{129A627C-BA4E-4B45-8F22-A154DF49C83C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{129A627C-BA4E-4B45-8F22-A154DF49C83C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{129A627C-BA4E-4B45-8F22-A154DF49C83C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{129A627C-BA4E-4B45-8F22-A154DF49C83C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{650AEA5D-EFDC-4F1A-9E2B-CF557D4CAF08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{650AEA5D-EFDC-4F1A-9E2B-CF557D4CAF08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{650AEA5D-EFDC-4F1A-9E2B-CF557D4CAF08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{650AEA5D-EFDC-4F1A-9E2B-CF557D4CAF08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F4A84A6-3854-43F9-B259-7CDF7D15D463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F4A84A6-3854-43F9-B259-7CDF7D15D463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F4A84A6-3854-43F9-B259-7CDF7D15D463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F4A84A6-3854-43F9-B259-7CDF7D15D463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BAEEFA2-EC81-4EC5-9E2F-C365AAC8D6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BAEEFA2-EC81-4EC5-9E2F-C365AAC8D6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BAEEFA2-EC81-4EC5-9E2F-C365AAC8D6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BAEEFA2-EC81-4EC5-9E2F-C365AAC8D6FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDE936D-239F-4971-AB06-9F7DD5F62D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDE936D-239F-4971-AB06-9F7DD5F62D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDE936D-239F-4971-AB06-9F7DD5F62D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDE936D-239F-4971-AB06-9F7DD5F62D4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3A6E3C-1554-4FD1-AF75-634069C1585C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3A6E3C-1554-4FD1-AF75-634069C1585C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3A6E3C-1554-4FD1-AF75-634069C1585C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3A6E3C-1554-4FD1-AF75-634069C1585C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3EB98A9E-0AB7-420E-8803-BFB00F0BD9AE}
+	EndGlobalSection
+EndGlobal

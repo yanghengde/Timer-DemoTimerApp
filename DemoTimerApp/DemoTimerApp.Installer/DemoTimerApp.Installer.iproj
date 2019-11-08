@@ -1,0 +1,87 @@
+﻿<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>eede936d-239f-4971-ab06-9f7dd5f62d4d</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Siemens.Mom.Presales.Training.DemoTimerApp.Installer</RootNamespace>
+    <AssemblyName>Siemens.Mom.Presales.Training.DemoTimerApp.Installer</AssemblyName>
+    <Name>DemoTimerApp.Installer</Name>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FunctionalBlockType>Project</FunctionalBlockType>
+    <FunctionalBlockVersion>01.00.04</FunctionalBlockVersion>
+    <FunctionalBlockName>DemoTimerApp</FunctionalBlockName>
+    <FunctionalBlockPrefix>Siemens.Mom.Presales.Training</FunctionalBlockPrefix>
+    <FunctionalBlockModels>Siemens.Mom.Presales.Training.DemoTimerApp.DemoTimerApp.DAPOMModel</FunctionalBlockModels>
+    <FunctionalBlockDescription>
+    </FunctionalBlockDescription>
+    <SitPlatformVersion>3.0</SitPlatformVersion>
+    <AutoDeployPackage>True</AutoDeployPackage>
+    <CanBeExtended>False</CanBeExtended>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU'  ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="ExternalDependencies" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Siemens.Mom.Presales.Training.DemoTimerApp.Dbinit.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Siemens.Mom.Presales.Training.DemoTimerApp.References.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Siemens.Mom.Presales.Training.DemoTimerApp.ApplicationLog.en-US.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemoTimerApp.CommandHandler\DemoTimerApp.CommandHandler.csproj">
+      <Name>DemoTimerApp.CommandHandler</Name>
+      <Project>{129a627c-ba4e-4b45-8f22-a154df49c83c}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoTimerApp.DAPOMModel\DemoTimerApp.DAPOMModel.pmproj">
+      <Name>DemoTimerApp.DAPOMModel</Name>
+      <Project>{8b3a6e3c-1554-4fd1-af75-634069c1585c}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoTimerApp.EventHandler\DemoTimerApp.EventHandler.csproj">
+      <Name>DemoTimerApp.EventHandler</Name>
+      <Project>{650aea5d-efdc-4f1a-9e2b-cf557d4caf08}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoTimerApp.ReadingFunctionHandler\DemoTimerApp.ReadingFunctionHandler.csproj">
+      <Name>DemoTimerApp.ReadingFunctionHandler</Name>
+      <Project>{8f4a84a6-3854-43f9-b259-7cdf7d15d463}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoTimerApp.UserInterface\DemoTimerApp.UserInterface.csproj">
+      <Name>DemoTimerApp.UserInterface</Name>
+      <Project>{4baeefa2-ec81-4ec5-9e2f-c365aac8d6fd}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIt.Build.Installer.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

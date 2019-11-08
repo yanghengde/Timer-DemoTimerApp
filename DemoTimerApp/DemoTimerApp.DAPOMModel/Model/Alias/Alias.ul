@@ -1,0 +1,3 @@
+VERSION '01.12'
+
+PUBLISH COMMAND Siemens.Mom.Presales.Training.MasterData.DemoTimerLib.MSModel.Commands.CreatePeriodicTimer AS CreatePeriodicTimer
